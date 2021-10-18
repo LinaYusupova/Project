@@ -1,0 +1,23 @@
+.social-media {
+    background-color: var(--black);
+    height: 79px;
+    display: flex;
+    justify-content: space-around;
+
+    &__copyright {
+        align-self: center;
+        font-weight: normal;
+        font-size: 16px;
+        color: #FBFBFB;
+        line-height: 19px;
+    }
+
+    &__list {
+        display: flex;
+        align-self: center;
+    }
+
+    &__item {
+        padding-left: 7px;
+    }
+}

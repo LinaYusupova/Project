@@ -1,0 +1,44 @@
+.subscribe {
+    background-image: url(../img/subscribe.jpg);
+    background-repeat: no-repeat;
+    height: 448px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__heading {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 31px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 32px;
+    }
+
+    &__email {
+        width: 323px;
+        height: 50px;
+        background: #E1E1E1;
+        border-width: 0;
+        border-radius: 25px 0 0 25px;
+        padding-left: 22px;
+    }
+
+    &__button {
+        width: 100px;
+        height: 50px;
+        background: #F16D7F;
+        border-width: 0;
+        border-radius: 0 25px 25px 0;
+        padding-left: 8px;
+        color: #FFFFFF;
+    }
+}
