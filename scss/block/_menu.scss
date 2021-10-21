@@ -1,0 +1,16 @@
+.menu-sub-item {
+    &__title {
+        padding-bottom: 12px;
+        text-transform: uppercase;
+        color: #F16D7F;
+    }
+
+    &__item {
+        padding-bottom: 12px;
+        color: #6F6E6E;
+    }
+
+    &__list {
+        padding-left: 20px;
+    }
+}
