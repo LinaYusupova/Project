@@ -296,7 +296,7 @@
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   background: rgba(0, 0, 0, 0.2);
-  background-image: url(/img/add-to-cart.svg);
+  background-image: url(../../img/add-to-cart.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
