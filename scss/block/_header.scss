@@ -8,11 +8,7 @@
     }
 
     &__icon {
-        padding: 18px 0 0 0;
-    }
-
-    &__search-icon {
-        padding: 18px 0 0 41px;
+        margin: 18px 0 0 0;
     }
 
     &__ico {
@@ -31,6 +27,8 @@
     &__menu-exit {
         align-self: flex-start;
         margin: 17px;
+        position: absolute;
+        left: 175px;
     }
 
     &__pop-up-menu {
@@ -40,17 +38,17 @@
     &__menu {
         position: absolute;
         width: 232px;
-        height: 764px;
         top: 65px;
-        right: -400px;
+        right: -200px;
         background: $white;
         font-size: 14px;
         line-height: 17px;
+        z-index: 1;
         display: none;
     }
 
     &__menu-list {
-        padding: 34px 0 0 37px;
+        padding: 34px;
     }
 
     &__title {
@@ -58,11 +56,14 @@
         font-weight: bold;
         text-transform: uppercase;
     }
+
+    &__search-icon {
+        margin: 18px 0 0 41px;
+    }
 }
 
-
-.header__button:hover+.header__menu,
-.header__button:focus+.header__menu {
+.header__button:hover + .header__menu,
+.header__button:focus + .header__menu {
     display: block;
 }
 

@@ -1,0 +1,26 @@
+.loyalty {
+    max-width: 650px;
+    width: 50%;
+
+    &__heading {
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 22px 0 22px 0;
+    }
+
+    &__benefits-item {
+        margin-bottom: 16px;
+        background: url(../img/loyalty.svg) no-repeat;
+        padding-left: 43px;
+    }
+}
+
+.loyalty__text,
+.loyalty__benefits,
+.loyalty__heading {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}

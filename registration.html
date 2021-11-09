@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Project/style/reset.css">
-    <link rel="stylesheet" href="../Project/style/style.css">
-    <link rel="stylesheet" href="../Project/style/style-registration.css">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <title>Registration</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container">
             <div class="header__box">
-                <a href="index.html"><img href="index.html" class="header__icon" src="img/icon.svg" alt="logo"
-                        width="44" height="38"></a>
+                <a href="index.html"><img class="header__icon" src="img/icon.svg" alt="logo" width="44" height="38"></a>
                 <img class="header__search-icon" src="img/loupe.svg" alt="loupe" width="26" height="27">
             </div>
             <div class="header__box">
@@ -63,18 +61,18 @@
                         </ul>
                     </nav>
                 </div>
-                <a class="header__ico" href="registration.html"><img src="img/person.svg" alt="person" width="29"
-                        height="29"></a>
-                <a class="header__ico" href="cart.html"><img src="img/cart.svg" alt="shopping--cart" width="32"
-                        height="29"></a>
+                <a class="header__ico header__person" href="registration.html"><img src="img/person.svg" alt="person"
+                        width="29" height="29"></a>
+                <a class="header__ico header__cart" href="cart.html"><img src="img/cart.svg" alt="shopping--cart"
+                        width="32" height="29"></a>
             </div>
         </div>
     </header>
     <main>
-        <div class="registration__headline">
+        <div class="registration__headline container">
             <h1 class="registration__heading">registration</h1>
         </div>
-        <div class="container-registration">
+        <div class="registration__container">
             <section class="registration">
                 <form action="#">
                     <fieldset>
@@ -83,9 +81,9 @@
                         <input class="registration__last-name" type="text" placeholder="Last Name"><br>
                     </fieldset>
                     <fieldset class="registration__gender">
-                        <input id="registration__radio-male" type="radio" value="male">
+                        <input id="registration__radio-male" type="radio" value="male" name="male">
                         <label for="registration__radio-male" class="registration__male">Male</label>
-                        <input id="registration__radio-female" type="radio" value="female">
+                        <input id="registration__radio-female" type="radio" value="female" name="female">
                         <label for="registration__radio-female" class="registration__female">Female</label>
                     </fieldset>
                     <fieldset>
@@ -96,9 +94,9 @@
                         <p class="registration__password-template">Please use 8 or more characters, with at least 1
                             number and a mixture of uppercase and
                             lowercase
-                            letters</p>
+                            letters</p> 
                     </fieldset>
-                    <button class="registration__button" type="button">join now</button>
+                    <button class="registration__button" type="button"><span class="registration__button-text">join now</span></button>
                 </form>
             </section>
             <section class="loyalty">
@@ -119,11 +117,11 @@
     </main>
     <footer>
         <section class="subscribe">
-            <img class="subscribe__about-us" src="img/subscribe-info.svg" alt="subscribe info" width="360" height="225">
+            <img class="subscribe__about-us" src="img/subscribe-info.svg" alt="subscribe info">
             <form action="#">
                 <h2 class="subscribe__heading">subscribe</h2>
                 <p class="subscribe__text">for our newletter and promotion</p>
-                <fieldset>
+                <fieldset class="subscribe__send">
                     <input class="subscribe__email" type="email" placeholder="Enter Your Email">
                     <button type="button" id="subscribe__button">
                         <label for="subscribe__button">Subscribe</label>

@@ -1,0 +1,95 @@
+.registration {
+    width: 360px;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        padding: 64px 0px 96px 0px;
+    }
+
+    &__headline {
+        background-color: $background-pink;
+        height: 148px;
+        display: flex;
+        align-items: center;
+        padding-left: 20%;
+    }
+
+    &__heading {
+        color: #F16D7F;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+    }
+
+    &__password-template {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin: 15px 0 39px 0;
+    }
+
+    &__button {
+        width: 167px;
+        height: 50px;
+        background-color: #F16D7F;
+        padding: 16px 29px;
+    }
+
+    &__button-text {
+        color: $white;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+
+    &__button-text:after {
+        content: url(/img/join-now.svg);
+        padding-left: 20px;
+    }
+
+    &__gender {
+        margin: 33px 0 33px 0;
+    }
+}
+
+.registration__login-details,
+.registration__name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.registration__male,
+.registration__female {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+#registration__radio-female {
+    margin-left: 20px;
+}
+
+.registration__male,
+.registration__female {
+    margin-left: 10px;
+}
+
+.registration__first-name,
+.registration__last-name,
+.registration__email,
+.registration__password {
+    height: 45px;
+    width: 343px;
+    border: 1px solid #A4A4A4;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 17px;
+    margin-top: 20px;
+}

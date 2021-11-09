@@ -1,0 +1,49 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__heading {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        color: $black;
+        padding-top: 96px;
+    }
+
+    &__about {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+        padding-bottom: 33px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1170px;
+    }
+
+    &__item {
+        max-width: 360px;
+        padding: 15px;
+    }
+
+    &__all {
+        width: 211px;
+        height: 47px;
+        border: 1px solid #FF6A6A;
+        background-color: $white;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        margin: 49px 0 96px 0;
+    }
+}

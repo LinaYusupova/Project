@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Project/style/reset.css">
-    <link rel="stylesheet" href="../Project/style/style.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <title>Cart</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container">
             <div class="header__box">
-                <a href="index.html"><img href="index.html" class="header__icon" src="img/icon.svg" alt="logo"
-                        width="44" height="38"></a>
+                <a href="index.html"><img class="header__icon" src="img/icon.svg" alt="logo" width="44" height="38"></a>
                 <img class="header__search-icon" src="img/loupe.svg" alt="loupe" width="26" height="27">
             </div>
             <div class="header__box">
@@ -62,67 +61,80 @@
                         </ul>
                     </nav>
                 </div>
-                <a class="header__ico" href="registration.html"><img src="img/person.svg" alt="person" width="29"
-                        height="29"></a>
-                <a class="header__ico" href="cart.html"><img src="img/cart.svg" alt="shopping--cart" width="32"
-                        height="29"></a>
+                <a class="header__ico header__person" href="registration.html"><img src="img/person.svg" alt="person"
+                        width="29" height="29"></a>
+                <a class="header__ico header__cart" href="cart.html"><img src="img/cart.svg" alt="shopping--cart"
+                        width="32" height="29"></a>
             </div>
         </div>
     </header>
     <main>
-        <h1>shopping cart</h1>
-        <section>
-            <ul>
-                <li>
-                    <img src="img/product-3.jpg" alt="photo of product">
-                    <div>
-                        <h2>mango people t-shirt</h2>
-                        <ul>
-                            <li>Price: $300</li>
-                            <li>Color: Red</li>
-                            <li>Size: Xl</li>
-                            <li>Quantity: 2</li>
-                        </ul>
-                    </div>
-                    <button type="button"><img src="img/exit.svg" alt="exit"></button>
-                </li>
-                <li>
-                    <img src="img/product-12.jpg" alt="photo of product">
-                    <div>
-                        <h2>mango people t-shirt</h2>
-                        <ul>
-                            <li>Price: $300</li>
-                            <li>Color: Red</li>
-                            <li>Size: Xl</li>
-                            <li>Quantity: 2</li>
-                        </ul>
-                    </div>
-                    <button type="button"><img src="img/exit.svg" alt="exit"></button>
-                </li>
-            </ul>
-            <button type="button">clear shopping cart</button>
-            <button type="button">continue shopping</button>
-        </section>
-        <section>
-            <h2>shipping adress</h2>
-            <input type="text" placeholder="Bangladesh">
-            <input type="text" placeholder="State">
-            <input type="text" placeholder="Postcode / Zip">
-            <button type="button">get a quote</button>
-            <div>
-                <h3>sub total $900</h3>
-                <h2>grand total $900</h2>
-                <button type="button">proceed to checkout</button>
-            </div>
-        </section>
+        <div class="cart__headline">
+            <h1 class="cart__heading">shopping cart</h1>
+        </div>
+        <div class="cart">
+            <section class="cart-products">
+                <ul class="cart-products__list">
+                    <li class="cart-products__item cart-product">
+                        <img class="cart-product__img" src="img/product-3.jpg" alt="photo of product">
+                        <div class="cart-product__container">
+                            <div class="cart-product__description">
+                                <h2 class="cart-product__heading">mango people t-shirt</h2>
+                                <ul class="cart-product__list">
+                                    <li class="cart-product__detail">Price: $300</li>
+                                    <li class="cart-product__detail">Color: Red</li>
+                                    <li class="cart-product__detail">Size: Xl</li>
+                                    <li class="cart-product__detail">Quantity: 2</li>
+                                </ul>
+                            </div>
+                            <button  class="cart-product__delete" class="cart-product" type="button"><img src="img/exit.svg" alt="exit" height="18" width="18"></button>    
+                        </div>
+                    </li>
+                    <li class="cart-products__item cart-product">
+                        <img class="cart-product__img" src="img/product-12.jpg" alt="photo of product">
+                        <div class="cart-product__container">
+                            <div class="cart-product__description">
+                                <h2 class="cart-product__heading">mango people t-shirt</h2>
+                                <ul class="cart-product__list">
+                                    <li class="cart-product__detail">Price: $300</li>
+                                    <li class="cart-product__detail">Color: Red</li>
+                                    <li class="cart-product__detail">Size: Xl</li>
+                                    <li class="cart-product__detail">Quantity: 2</li>
+                                </ul>
+                            </div>
+                            <button  class="cart-product__delete" type="button"><img src="img/exit.svg" alt="exit" width="18" heigth="18"></button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart-products__action">
+                    <button class="cart-products__clear" type="button">clear shopping cart</button>
+                    <button class="cart-products__continue" type="button">continue shopping</button>    
+                </div>
+            </section>
+            <section class="cart-detail">
+                <div class="cart-detail__container">
+                    <h2 class="cart-detail__heading">shipping adress</h2>
+                    <input class="cart-detail__country" type="text" placeholder="Bangladesh"><br>
+                    <input class="cart-detail__state" type="text" placeholder="State"><br>
+                    <input class="cart-detail__postcode" type="text" placeholder="Postcode / Zip"><br>
+                    <button class="cart-detail__accepted" type="button">get a quote</button>
+                </div>
+                <div class="total-price">
+                    <h3 class="total-price__heading">sub total<span class="sub-total">$900</span></h3>
+                    <h2 class="total-price__subheading">grand total<span class="grand-price">$900</span></h2>
+                    <hr class="total-price__line">
+                    <button class="total-price__buy" type="button">proceed to checkout</button>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <section class="subscribe">
-            <img class="subscribe__about-us" src="img/subscribe-info.svg" alt="subscribe info" width="360" height="225">
+            <img class="subscribe__about-us" src="img/subscribe-info.svg" alt="subscribe info">
             <form action="#">
                 <h2 class="subscribe__heading">subscribe</h2>
                 <p class="subscribe__text">for our newletter and promotion</p>
-                <fieldset>
+                <fieldset class="subscribe__send">
                     <input class="subscribe__email" type="email" placeholder="Enter Your Email">
                     <button type="button" id="subscribe__button">
                         <label for="subscribe__button">Subscribe</label>

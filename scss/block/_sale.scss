@@ -1,4 +1,9 @@
 .sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 65px 16px 0 16px;
+
     &__title {
         visibility: hidden;
     }
@@ -8,7 +13,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-top: 65px;
     }
 
     &__item {
@@ -18,22 +22,22 @@
 
     &-women {
         background-image: url(../img/sale-woman.jpg);
-        background-repeat: no-repeat;
-        width: 360px;
-        height: 260px;
     }
 
     &-men {
         background-image: url(../img/sale-man.jpg);
-        background-repeat: no-repeat;
-        width: 360px;
-        height: 260px;
     }
 
     &-kids {
         background-image: url(../img/sale-kids.jpg);
+    }
+
+    &-women,
+    &-men,
+    &-kids {
         background-repeat: no-repeat;
-        width: 360px;
+        flex-grow: 1;
+        max-width: 360px;
         height: 260px;
     }
 

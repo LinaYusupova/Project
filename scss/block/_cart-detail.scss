@@ -1,0 +1,38 @@
+.cart-detail {
+    width: 360px;
+    padding-left: 128px;
+
+    &__heading {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+    }
+
+    &__country,
+    &__state,
+    &__postcode {
+        height: 45px;
+        width: 343px;
+        border: 1px solid #A4A4A4;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        padding-left: 17px;
+        margin-top: 10px;
+    }
+
+    &__accepted {
+        width: 100px;
+        height: 35px;
+        background-color: #FFFFFF;
+        border: 1px solid #A4A4A4;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #A4A4A4;
+        margin: 24px 0 58px 0;
+    }
+}
