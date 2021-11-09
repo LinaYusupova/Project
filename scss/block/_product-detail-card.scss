@@ -1,0 +1,99 @@
+.product-detail-card {
+    border: 1px solid #EAEAEA;
+    max-width: 1140px;
+    width: 75%;
+    padding: 64px 0;
+    position: absolute;
+    top: 95%;
+    background-color: $white;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__subheading {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 28px 0 48px 0;
+    }
+
+    &__detail {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        width: 60%;
+    }
+
+    &__price {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #EF5B70;
+        padding: 32px 0 65px 0;
+    }
+
+    &__add-to-cart {
+        content: url(/img/cart-pink.svg);
+        background-color: $white;
+        width: 210px;
+        height: 50px;
+        border: 1px solid #FF6A6A;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+    }
+
+    &__filter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        text-transform: uppercase;
+        padding: 65px 0 54px 0;
+    }
+
+    &__item {
+        padding-right: 23px;
+    }
+
+    &__item::after {
+        content: url(/img/product-filter.svg);
+        padding-left: 9px;
+    }
+
+    &__text::before {
+        content: url(/img/cart-pink.svg);
+        padding-right: 22px;
+        size: 24px 24px;
+    }
+
+    &__line {
+        width: 60%;
+    }
+}

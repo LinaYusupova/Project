@@ -1,0 +1,31 @@
+.cart-product {
+    margin-bottom: 40px;
+
+    &__img {
+        width: 40%;
+    }
+
+    &__container {
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    &__heading {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        padding-bottom: 42px;
+    }
+
+    &__detail {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        padding-bottom: 6px;
+    }
+}

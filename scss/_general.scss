@@ -1,9 +1,277 @@
 .container {
-    width: 1440px;
+    max-width: 1601px;
     margin: auto 0;
 }
 
 body {
     font-family: Lato;
     font-style: normal;
+}
+
+@media (max-width: 1198px) {
+    .cart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-detail {
+        margin-top: 65px;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        &__accepted {
+            margin-bottom: 0;
+        }
+    }
+
+    .total-price {
+        margin-left: 15px;
+    }
+
+    .cart-products {
+        max-width: 734px;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .registration {
+        margin-bottom: 40px;
+
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 8px 96px 8px;
+        }
+
+        &__headline {
+            justify-content: center;
+            padding-left: 0px;
+        }
+    }
+
+    .loyalty {
+
+        &__text,
+        &__benefits,
+        &__heading {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    .registration,
+    .loyalty {
+        max-width: 360px;
+        width: 95vw;
+    }
+
+    .registration__first-name,
+    .registration__last-name,
+    .registration__email,
+    .registration__password {
+        width: 90%;
+    }
+
+    .cart-detail {
+        flex-direction: column;
+    }
+
+    .cart-product {
+        &__heading {
+            font-size: 16px;
+            line-height: 19px;
+            padding-bottom: 25px;
+        }
+
+        &__detail {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .cart-products {
+        width: 360px;
+
+        &__item {
+            height: 188px;
+        }
+
+        &__clear,
+        &__continue {
+            font-size: 12px;
+            line-height: 14px;
+            width: 175px;
+            height: 33px;
+        }
+    }
+
+    .total-price {
+        margin: 48px 0 0 0;
+    }
+
+    .products__item {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 426px) {
+    .header__container {
+        justify-content: space-between;
+        padding: 0 18px 0 18px;
+    }
+
+    .men {
+        &__title {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 53px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+        }
+    }
+
+    .sale__item {
+        margin: 10px;
+    }
+
+    .sale-women,
+    .sale-men,
+    .sale-kids {
+        flex-grow: 1;
+    }
+
+    .benefits {
+        padding: 0 0 64px 0;
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            padding-top: 48px;
+        }
+    }
+
+    .social-media {
+        padding: 23px 32px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        padding: 55px 0 140px 0;
+    }
+
+    .registration__headline {
+        padding-left: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .header__person,
+    .header__cart,
+    .men__img {
+        display: none;
+    }
+
+    .men {
+        height: 363px;
+        justify-content: center;
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__rectangle {
+            height: 61px;
+            margin: 0;
+        }
+    }
+
+    .sale-accesories,
+    .sale-men,
+    .sale-kids,
+    .sale-women {
+        min-width: 233px;
+        min-height: 167px;
+    }
+
+    .products {
+        &__heading {
+            padding-top: 64px;
+        }
+
+        &__item {
+            padding: 8px;
+        }
+    }
+
+    .product__img {
+        width: 100%;
+    }
+
+    .benefits {
+        padding: 0 13px 81px 13px;
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            padding-top: 48px;
+            width: 100%;
+        }
+    }
+
+    .subscribe {
+        flex-direction: column;
+        padding: 55px 16px 109px 16px;
+
+        &__about-us {
+            width: 100%;
+        }
+
+        &__text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+
+        &__heading {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 37px;
+        }
+
+        &__email {
+            width: 70%;
+            padding-left: 22px;
+        }
+    }
+
+    #subscribe__button {
+        width: 30%;
+    }
+
+    .social-media {
+        flex-direction: column-reverse;
+        padding: 40px 0 8px 0;
+
+        &__list {
+            padding-bottom: 40px;
+        }
+    }
 }

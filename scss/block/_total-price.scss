@@ -1,0 +1,47 @@
+.total-price {
+    background-color: #F5F3F3;
+    padding: 42px;
+    text-align: end;
+
+    &__heading {
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        text-transform: uppercase;
+    }
+
+    &__subheading {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        text-transform: uppercase;
+        padding-top: 12px;
+    }
+
+    &__buy {
+        width: 270px;
+        height: 50px;
+        background-color: #F16D7F;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__line {
+        color: #E2E2E2;
+        margin: 17px 0 21px 0;
+    }
+}
+
+.sub-total,
+.grand-price {
+    padding-left: 25px;
+}
+
+.grand-price {
+    color: $dark-pink;
+}

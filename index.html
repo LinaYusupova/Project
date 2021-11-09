@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="../Project/style/reset.css">
-    <link rel="stylesheet" href="../Project/style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
@@ -15,11 +15,10 @@
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container">
             <div class="header__box">
-                <a href="index.html"><img href="index.html" class="header__icon" src="img/icon.svg" alt="logo"
-                        width="44" height="38"></a>
-                <img class="header__search-icon" src="img/loupe.svg" alt="loupe" width="26" height="27">
+                <a href="index.html"><img class="header__icon" src="img/icon.svg" alt="logo" width="44" height="38"></a>
+                <div class="header__search"><img class="header__search-icon" src="img/loupe.svg" alt="loupe" width="26" height="27"></div>
             </div>
             <div class="header__box">
                 <div class="header__pop-up-menu">
@@ -62,10 +61,10 @@
                         </ul>
                     </nav>
                 </div>
-                <a class="header__ico" href="registration.html"><img src="img/person.svg" alt="person" width="29"
-                        height="29"></a>
-                <a class="header__ico" href="cart.html"><img src="img/cart.svg" alt="shopping--cart" width="32"
-                        height="29"></a>
+                <a class="header__ico header__person" href="registration.html"><img src="img/person.svg" alt="person"
+                        width="29" height="29"></a>
+                <a class="header__ico header__cart" href="cart.html"><img src="img/cart.svg" alt="shopping--cart"
+                        width="32" height="29"></a>
             </div>
         </div>
     </header>
@@ -73,13 +72,16 @@
         <section class="men">
             <img class="men__img" src="img/man.jpg" alt="man">
             <div class="men-wrp">
-                <h1 class="men__title">the brand <span class="men__subtitle">of luxerious <span
-                            class="men__pink">fashion</span></span></h1>
+                <div class="men__rectangle"></div>
+                <div>
+                    <h1 class="men__title">the brand <span class="men__subtitle">of luxerious <span
+                                class="men__pink">fashion</span></span></h1>
+                </div>
             </div>
         </section>
         <section class="sale">
             <h2 class="sale__title">Sale</h2>
-            <ul class="sale__list">
+            <ul class="sale__list container">
                 <li class="sale__item sale-women">
                     <a class="sale__link" href="#">
                         <p class="sale__text">30% off</p>
@@ -111,10 +113,10 @@
             <p class="products__about">Shop for items based on what we featured in this week</p>
             <ul class="products__list">
                 <li class="products__item">
-                    <a class="products__link product" href="#">
-                        <img class="product__img" src="img/product-1.jpg" alt="photo of product" width="360"
-                            height="420">
-                        <button type="product__add-to-card">Add to Card</button>
+                    <a class="products__link product" href="product.html">
+                        <div class="product__hover">
+                            <img class="product__img" src="img/product-1.jpg" alt="photo of product">
+                        </div>
                         <div class="product__card">
                             <h3 class="product__brand">ellery x m'o capsule</h3>
                             <p class="product__description">Known for her sculptural takes on traditional tailoring,
@@ -125,9 +127,10 @@
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link product" href="#">
-                        <img class="product__img" src="img/product-2.jpg" alt="photo of product" width="360"
-                            height="420">
+                    <a class="products__link product" href="product.html">
+                        <div class="product__hover">
+                            <img class="product__img" src="img/product-2.jpg" alt="photo of product">
+                        </div>
                         <div class="product__card">
                             <h3 class="product__brand">ellery x m'o capsule</h3>
                             <p class="product__description">Known for her sculptural takes on traditional tailoring,
@@ -138,9 +141,10 @@
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link product" href="#">
-                        <img class="product__img" src="img/product-3.jpg" alt="photo of product" width="360"
-                            height="420">
+                    <a class="products__link product" href="product.html">
+                        <div class="product__hover">
+                            <img class="product__img" src="img/product-3.jpg" alt="photo of product">
+                        </div>
                         <div class="product__card">
                             <h3 class="product__brand">ellery x m'o capsule</h3>
                             <p class="product__description">Known for her sculptural takes on traditional tailoring,
@@ -151,9 +155,10 @@
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link product" href="#">
-                        <img class="product__img" src="img/product-4.jpg" alt="photo of product" width="360"
-                            height="420">
+                    <a class="products__link product" href="product.html">
+                        <div class="product__hover">
+                            <img class="product__img" src="img/product-4.jpg" alt="photo of product">
+                        </div>
                         <div class="product__card">
                             <h3 class="product__brand">ellery x m'o capsule</h3>
                             <p class="product__description">Known for her sculptural takes on traditional tailoring,
@@ -164,9 +169,10 @@
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link product" href="#">
-                        <img class="product__img" src="img/product-5.jpg" alt="photo of product" width="360"
-                            height="420">
+                    <a class="products__link product" href="product.html">
+                        <div class="product__hover">
+                            <img class="product__img" src="img/product-5.jpg" alt="photo of product">
+                        </div>
                         <div class="product__card">
                             <h3 class="product__brand">ellery x m'o capsule</h3>
                             <p class="product__description">Known for her sculptural takes on traditional tailoring,
@@ -177,9 +183,10 @@
                     </a>
                 </li>
                 <li class="products__item">
-                    <a class="products__link product" href="#">
-                        <img class="product__img" src="img/product-6.jpg" alt="photo of product" width="360"
-                            height="420">
+                    <a class="products__link product" href="product.html">
+                        <div class="product__hover">
+                            <img class="product__img" src="img/product-6.jpg" alt="photo of product">
+                        </div>
                         <div class="product__card">
                             <h3 class="product__brand">ellery x m'o capsule</h3>
                             <p class="product__description">Known for her sculptural takes on traditional tailoring,
@@ -190,7 +197,7 @@
                     </a>
                 </li>
             </ul>
-            <button class="products__all" type="button">Browse All Product</button>
+            <a href="catalog.html"><button class="products__all" type="button">Browse All Product</button></a>
         </section>
         <section class="benefits">
             <ul class="benefits__list">
@@ -220,11 +227,11 @@
     </main>
     <footer>
         <section class="subscribe">
-            <img class="subscribe__about-us" src="img/subscribe-info.svg" alt="subscribe info" width="360" height="225">
+            <img class="subscribe__about-us" src="img/subscribe-info.svg" alt="subscribe info">
             <form action="#">
                 <h2 class="subscribe__heading">subscribe</h2>
                 <p class="subscribe__text">for our newletter and promotion</p>
-                <fieldset>
+                <fieldset class="subscribe__send">
                     <input class="subscribe__email" type="email" placeholder="Enter Your Email">
                     <button type="button" id="subscribe__button">
                         <label for="subscribe__button">Subscribe</label>

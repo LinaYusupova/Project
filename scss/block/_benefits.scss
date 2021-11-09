@@ -1,6 +1,7 @@
 .benefits {
-    background-color: var(--black);
-    height: 341px;
+    background-color: $black;
+    height: 100%;
+    padding: 103px 0 104px;
 
     &__list {
         display: flex;
@@ -11,14 +12,15 @@
     &__item {
         text-align: center;
         width: 360px;
-        padding-top: 103px;
     }
+}
 
+.benefit {
     &__heading {
         font-size: 20px;
         font-weight: 400;
         line-height: 24px;
-        color: var(--white);
+        color: $white;
         padding-top: 19px;
     }
 
@@ -26,7 +28,7 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 17px;
-        color: var(--white);
+        color: $white;
         padding-top: 16px;
     }
 }
